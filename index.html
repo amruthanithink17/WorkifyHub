@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amrutha | Freelance Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #000, #0a2a3d);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #00bcd4;
+    }
+
+    header p {
+      color: #bbb;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #111;
+      padding: 15px 0;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    nav a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 10px 20px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+
+      color: #00bcd4;
+      margin-bottom: 15px;
+      
+      padding-left: 10px;
+      text-align: center;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    /* SERVICES */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      background: #141414;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      flex: 1 1 280px;
+      transition: transform 0.3s, background 0.3s;
+       box-shadow: 0px 0px 20px #00bcd4;
+    }
+
+    .service-box:hover {
+      background: #1b1b1b;
+      transform: translateY(-5px);
+    }
+
+    .service-box h3 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .project {
+      background: #141414;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0px 0px 20px #00bcd4;
+    }
+
+    .project:hover {
+      transform: scale(1.03);
+      background: #1c1c1c;
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project p {
+      padding: 15px;
+      color: #bbb;
+    }
+
+    /* CONTACT */
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-info a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #0a0a0a;
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      border-top: 1px solid #1c1c1c;
+      margin-top: 40px;
+    }
+
+    footer span {
+      color: #00bcd4;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, <br>I'm Amrutha</h1>
+    <p>Freelance Web Developer | Designing Modern & Responsive Websites</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Amrutha</strong>, a passionate freelance web developer focused on crafting beautiful,
+      user-friendly websites. I specialize in responsive design, ensuring your brand looks perfect on
+      every screen — from mobiles to desktops.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>💻 Web Design</h3>
+        <p>Clean, modern and visually stunning UI designs tailored to your brand.</p>
+      </div>
+      <div class="service-box">
+        <h3>⚙️ Development</h3>
+        <p>Fast, secure, and mobile-friendly websites built with modern technologies.</p>
+      </div>
+      <div class="service-box">
+        <h3>🔧 Maintenance</h3>
+        <p>Website updates, bug fixes, and long-term support for your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1502882705085-c59a6efb3d63?auto=format&fit=crop&w=800&q=80" alt="Project 1">
+        <p>Business Website for Local Startup</p>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Project 2">
+        <p>Personal Portfolio Design</p>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Project 3">
+        <p>Responsive E-commerce Landing Page</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>📧 <a href="mailto:amrutha@example.com">amrutha@example.com</a></p>
+      <p>📱 <a href="https://wa.me/91xxxxxxxxxx" target="_blank">+91 98765 43210</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <span>Amrutha</span> | Designed with ❤️ by <span>Amrutha</span></p>
+  </footer>
+
+</body>
+</html>
